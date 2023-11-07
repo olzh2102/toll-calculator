@@ -1,0 +1,9 @@
+### test
+POST http://localhost:3000/aggregate
+Content-Type: application/json
+
+{
+    "value": 44.44,
+    "obuID": 21312,
+    "unix": 837248374
+}
