@@ -7,3 +7,6 @@ Content-Type: application/json
     "obuID": 21312,
     "unix": 837248374
 }
+
+### GET invoice 
+GET http://localhost:3000/invoice?obu=3311742246723717659
