@@ -9,7 +9,7 @@ Content-Type: application/json
 }
 
 ### GET invoice 
-GET http://localhost:3000/invoice?obu=3311742246723717659
+GET http://localhost:3000/invoice?obu=-1572869173
 
 ### GET invoice gateway
 GET http://localhost:6000/invoice

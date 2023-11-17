@@ -27,3 +27,10 @@ services:
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
       KAFKA_LISTENERS: INTERNAL://:29092,EXTERNAL://:9092
       ALLOW_PLAINTEXT_LISTENER: "yes"
+
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./.config/prometheus.yml:/etc/prometheus/prometheus.yml
