@@ -14,7 +14,7 @@ type GRPCClient struct {
 }
 
 func NewGRPCClient(endpoint string) (*GRPCClient, error) {
-	conn, err := grpc.Dial("localhost:3001", grpc.WithTransportCredentials(insecure.NewCredentials()))
+	conn, err := grpc.Dial(endpoint, grpc.WithTransportCredentials(insecure.NewCredentials()))
 	if err != nil {
 		return nil, err
 	}
