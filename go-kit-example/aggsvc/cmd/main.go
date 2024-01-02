@@ -19,7 +19,7 @@ func main() {
 		logger = log.With(logger, "caller", log.DefaultCaller)
 	}
 
-	service := aggservice.New()
+	service := aggservice.New(logger)
 	endpoints := aggendpoint.New(service, logger)
 	httpHandler := aggtransport.NewHTTPHandler(endpoints, logger)
 
